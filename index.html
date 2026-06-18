@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern To-Do Manager</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>📝 Modern To-Do Manager</h1>
+
+    <div class="stats">
+        <div>Total: <span id="totalTasks">0</span></div>
+        <div>Done: <span id="completedTasks">0</span></div>
+        <div>Pending: <span id="pendingTasks">0</span></div>
+    </div>
+
+    <div class="progress-container">
+        <div id="progressBar"></div>
+        <p id=""progressText">0% Completed</p>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Search Tasks...">
+
+    <div class="task-form">
+        <input type="text" id="taskInput" placeholder="Enter task">
+        <input type="date" id="dueDate">
+        <select id="priority">
+            <option>High</option>
+            <option>Medium</option>
+            <option>Low</option>
+        </select>
+
+        <button onclick="addTask()">Add</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

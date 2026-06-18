@@ -1,0 +1,170 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,
+#0f172a,
+#1e3a8a);
+display:flex;
+justify-content:center;
+padding:30px;
+}
+
+.container{
+width:100%;
+max-width:700px;
+background:rgba(31,41,55,0.9);
+backdrop-filter:blur(10px);
+color:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+h1{
+text-align:center;
+margin-bottom:20px;
+}
+
+.stats{
+display:flex;
+justify-content:space-between;
+margin-bottom:15px;
+font-weight:bold;
+}
+
+.progress-container{
+height:15px;
+background:#ddd;
+border-radius:10px;
+overflow:hidden;
+margin-bottom:20px;
+}
+
+#progressBar{
+height:100%;
+width:0%;
+background:#8b5cf6;
+transition:0.3s;
+}
+
+#searchInput{
+width:100%;
+padding:10px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+.task-form{
+background:#3b82f6;    
+display:flex;
+gap:10px;
+margin-bottom:20px;
+}
+
+.task-form input,
+.task-form select{
+background:#374151;
+color:white;    
+padding:10px;
+border:1px solid #4b5563;
+border-radius:8px;
+}
+
+.task-form input{
+flex:1;
+}
+
+button{
+padding:10px 15px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+.task-form button{
+background:#8b5cf6;
+color:white;
+}
+
+ul{
+list-style:none;
+}
+
+li{
+    background:#374151;
+    color:white;
+    padding:15px;
+    margin-bottom:12px;
+    border-radius:12px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+li:hover{
+    transform:translateY(-2px);
+    box-shadow:0 4px 12px rgba(0,0,0,0.12);
+}
+
+.completed{
+text-decoration:line-through;
+color:#888;
+opacity: 0.7;
+}
+
+.actions button{
+    margin-left:8px;
+    padding:8px 14px;
+    border:none;
+    border-radius:8px;
+    font-weight:600;
+    color:white;
+    transition: 0.3s;
+}
+
+.actions button:hover{
+    transform: scale(1.08);
+}
+/* Complete Button */
+.actions button:nth-child(1){
+    background:#22c55e;
+}
+
+/* Edit Button */
+.actions button:nth-child(2){
+    background:#f59e0b;
+}
+
+/* Delete Button */
+.actions button:nth-child(3){
+    background:#ef4444;
+}
+
+.actions button:hover{
+    opacity:0.85;
+    transform:scale(1.05);
+    transition:0.2s;
+}
+
+.high{
+color:red;
+font-weight:bold;
+}
+
+.medium{
+color:orange;
+font-weight:bold;
+}
+
+.low{
+color:green;
+font-weight:bold;
+}
